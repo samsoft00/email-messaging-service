@@ -1,0 +1,82 @@
+{% include "moniex/partials/mail-header.liquid" %}
+
+    <!-- hero-icon-lines -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+      <tbody>
+        <tr>
+          <td class="o_bg-ultra_light o_px-md o_py-xl o_xs-py-md" align="center" style="background-color: #ebf5fa;padding-left: 24px;padding-right: 24px;padding-top: 20px;padding-bottom: 20px;">
+            <!--[if mso]><table width="584" cellspacing="0" cellpadding="0" border="0" role="presentation"><tbody><tr><td align="center"><![endif]-->
+            <div class="o_col-6s o_sans o_text-md o_text-light o_center" style="font-family: Helvetica, Arial, sans-serif;margin-top: 0px;margin-bottom: 0px;font-size: 19px;line-height: 28px;max-width: 584px;color: #82899a;text-align: center;">
+              <table class="o_center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="text-align: center;margin-left: auto;margin-right: auto;">
+                <tbody>
+                  <tr>
+                    <td class="o_bb-primary" height="40" width="32" style="border-bottom: 1px solid #126de5;">&nbsp; </td>
+                    <td rowspan="2" class="o_sans o_text o_text-secondary o_px o_py" align="center" style="font-family: Helvetica, Arial, sans-serif;margin-top: 0px;margin-bottom: 0px;font-size: 16px;line-height: 24px;color: #424651;padding-left: 16px;padding-right: 16px;padding-top: 16px;padding-bottom: 16px;">
+                      <img src="https://res.cloudinary.com/engage-cloud/image/upload/v1635859712/images/email-48-primary_zirlbr.png" width="48" height="48" alt="" style="max-width: 48px;-ms-interpolation-mode: bicubic;vertical-align: middle;border: 0;line-height: 100%;height: auto;outline: none;text-decoration: none;">
+                    </td>
+                    <td class="o_bb-primary" height="40" width="32" style="border-bottom: 1px solid #126de5;">&nbsp; </td>
+                  </tr>
+                  <tr>
+                    <td height="40">&nbsp; </td>
+                    <td height="40">&nbsp; </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 8px; line-height: 8px; height: 8px;">&nbsp; </td>
+                    <td style="font-size: 8px; line-height: 8px; height: 8px;">&nbsp; </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2 class="o_heading o_text-dark o_mb-xxs" style="font-family: Helvetica, Arial, sans-serif;font-weight: bold;margin-top: 0px;margin-bottom: 4px;color: #242b3d;font-size: 30px;line-height: 39px;">Verify E-mail Address</h2>
+            </div>
+            <!--[if mso]></td></tr></table><![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- spacer -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+      <tbody>
+        <tr>
+          <td class="o_bg-white" style="font-size: 24px;line-height: 24px;height: 24px;background-color: #ffffff;">&nbsp; </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- content -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+      <tbody>
+        <tr>
+          <td class="o_bg-white o_px-md o_py" align="center" style="background-color: #ffffff;padding-left: 24px;padding-right: 24px;padding-top: 16px;padding-bottom: 16px;">
+            <!--[if mso]><table width="584" cellspacing="0" cellpadding="0" border="0" role="presentation"><tbody><tr><td align="center"><![endif]-->
+            <div class="o_col-6s o_sans o_text o_text-secondary o_center" style="font-family: Helvetica, Arial, sans-serif;margin-top: 0px;margin-bottom: 0px;font-size: 16px;line-height: 24px;max-width: 584px;color: #424651;text-align: left;">
+              <h4 class="o_heading o_text-dark o_mb-xs" style="font-family: Helvetica, Arial, sans-serif;font-weight: bold;margin-top: 0px;margin-bottom: 8px;color: #242b3d;font-size: 18px;line-height: 23px;">Hello, {{customer_name}}</h4>
+              <p>Thank you for creating your account on MonieX Exchange.</p>
+              <p>Your verification code is : <strong>{{verification_code}}<strong>.</p>
+              <p>For security purposes, please click the below link to verify your email address </p>              
+              <table align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                <tbody>
+                  <tr>
+                    <td class="o_btn o_bg-success o_br o_heading o_text" align="left" style="font-family: Helvetica, Arial, sans-serif;font-weight: bold;margin-top: 0px;margin-bottom: 0px;font-size: 16px;line-height: 14px;mso-padding-alt: 12px 24px;background-color: #4F88C7;border-radius: 4px;">
+                      <a class="o_text-white" href="{{link_url}}" target="_blank" style="text-decoration: none;outline: none;color: #ffffff;display: block;padding: 12px 24px;mso-text-raise: 3px;">Confirm Email Address</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table> 
+              <br/>
+              <br/>
+              <p style="margin-top: 15px;margin-bottom: 10px;">Thanks, <br/> <span style="font-style: italic;">MonieX Team</span></p>             
+            </div>
+            <!--[if mso]></td></tr></table><![endif]-->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- spacer-lg -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+      <tbody>
+        <tr>
+          <td class="o_bg-white" style="font-size: 48px;line-height: 48px;height: 48px;background-color: #ffffff;">&nbsp; </td>
+        </tr>
+      </tbody>
+    </table>
+
+{% include "moniex/partials/mail-footer.liquid" %}

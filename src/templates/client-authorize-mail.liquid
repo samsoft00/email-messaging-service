@@ -1,0 +1,29 @@
+{% include "partials/mail-header.liquid" %}
+
+    <!-- START MAIN CONTENT AREA -->
+    <td class="wrapper">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <p>Hello {{name}},</p>
+
+                    <p>Fx Order Transaction created with Reference Number {{refrence_no}} is waiting for your authorization. </p>
+                    
+                    <p>Do not reply to this email. Download the attached pdf sign & upload <a href=`{{authorizeLink}}`>here</a> or click one of the following buttons to approve directly from email.</p>
+                    
+                    <p>Reject Link | Accept Link</p>
+                    
+                    <p><strong>IMPORTANT:</strong> Please approve or reject before ${expire_time} West Africa Standard Time (WAT) <br/>
+                        If {{expire_time}} passes without your action, the Transaction will be rejected automatically. </p>
+                    <p>Best Regards</p>
+                <br />
+                <img id="logo"
+                    src="https://sebastianbdc.com/wp-content/uploads/2017/02/logo.jpg"
+                    title="Sebastian Bureau De Change, Ltd"
+                    alt="Sebastian Bureau De Change, Ltd" />                    
+                </td>
+            </tr>
+        </table>
+    </td>
+
+{% include "partials/mail-footer-bdc.liquid" %}

@@ -1,0 +1,12 @@
+{
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "consistent-return": 0,
+    "camelcase": 0
+  },
+  "env": {
+    "jest": true
+  }
+}

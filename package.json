@@ -1,0 +1,46 @@
+{
+  "name": "email-service",
+  "version": "2.0.0",
+  "description": "Email service to handle all messaging for dashboard",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start:dev": "NODE_ENV=development nodemon",
+    "prettier:check": "./node_modules/.bin/prettier --check 'src/**/*.js'",
+    "prettier:clean": "./node_modules/.bin/prettier --write 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cpg_cicd/email-service.git"
+  },
+  "keywords": [
+    "email",
+    "service",
+    "google",
+    "pubsub"
+  ],
+  "author": "Oyewole Abayomi <oyewoleabayomi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/cpg_cicd/email-service/issues"
+  },
+  "homepage": "https://gitlab.com/cpg_cicd/email-service#readme",
+  "dependencies": {
+    "@bugsnag/js": "^7.14.1",
+    "@bugsnag/plugin-express": "^7.14.0",
+    "@google-cloud/pubsub": "^2.18.4",
+    "@sendgrid/helpers": "^7.6.0",
+    "@sendgrid/mail": "^7.6.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "fancy-log": "^2.0.0",
+    "got": "^11.8.3",
+    "jsonwebtoken": "^8.5.1",
+    "liquidjs": "^9.32.0",
+    "twilio": "^3.72.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "prettier": "^2.5.1"
+  }
+}
